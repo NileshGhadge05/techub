@@ -1,0 +1,19 @@
+{
+  "name": "nasap",
+  "version": "1.0.0",
+  "description": "NASAP is a news web application, which front end is built on HTML, CSS and Javascript and node.js used in back end, webapp use Hasura platform to deploy app backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyampatro/nasap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyampatro/nasap/issues"
+  },
+  "homepage": "https://github.com/satyampatro/nasap#readme"
+}
