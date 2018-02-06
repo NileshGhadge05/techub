@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/satyampatro/nasap/issues"
   },
-  "homepage": "https://github.com/satyampatro/nasap#readme"
+  "homepage": "https://github.com/satyampatro/nasap#readme",
+  "devDependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
 }
