@@ -1,49 +1,281 @@
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-      <title>TechHub</title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="ui/assets/stylesheet/main.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <title>Bootstrap Design Template - Pink</title>
+        <!-- BOOTSTRAP CORE CSS -->
+        <link href="ui/assets/css/bootstrap.css" rel="stylesheet"/>
+        <!-- IONICON STYLE SHEET FOR BEAUTIFUL ICONS -->
+        <link href="ui/assets/css/ionicons.css" rel="stylesheet"/>
+        <!-- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX-->
+        <link href="ui/assets/js/source/jquery.fancybox.css" rel="stylesheet"/>
+        <!-- CUSTOM CSS -->
+        <link href="ui/assets/css/style.css" rel="stylesheet"/>
 
+        <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top scroll-me">
+            <!-- pass scroll-me class above a tags to starts scrolling -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="ui/assets/img/logo.png"  alt=""/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">SIGNUP</button>
+                </ul>
+            </div>
 
-      <header class="header">
-        <h1 class="logo"><a href="#">Flexbox</a></h1>
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </header> 
-      
-      <div class="preview">
-        <img src="ui/assets/img/preview01.jpg" alt="preview">
+              <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
       </div>
 
-      <div class="row">
-          <div class="item-a">Web<br> Development</div>
-          <div class="item-b">Database<br> Technologies</div>
-          <div class="item-c">Networking<br> Hardware</div>
-          <div class="item-d">Mobile<br> Development</div>
-          <div class="item-e">Development<br> Operation</div>
-          <div class="item-f">Computer<br> Hardware</div>
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
         </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button type="button" class="w3-button w3-red">
+        	<a href="ui/form-register.html">SIGNUP</a>
+        </button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
       </div>
-      <div class="big"></div>
-      <div class="how">
-        <div class="how1">Search</div>
-        <div class="how2">Service</div>
-        <div class="how3">Pay</div>
-      </div>
-      <div class="footer">
-        <small>© 2018 Satyam Patro</small>  
-      </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="ui/js/plugins.js"></script>
-        <script src="ui/js/main.js"></script>
-    </body>
-</html>
+
+    </div>
+  </div>
+ 
+</div>
+
+           
+        </div>
+</div>
+<!-- NAVBAR END  -->
+<div id="header">
+    <div class="overlay">
+        <div class="container">
+            <div class="row scroll-me">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center ">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.2s">Time Fadeout,  Design Doesn't
+                        </h1>
+                    <h4 data-scroll-reveal="enter from the bottom after 0.4s">Morbi bibendum risus non nunc feugiat, quis venenatis augue fringilla. 
+                          Morbi vestibulum elit eget leo congue elementum.
+                           Aliquam at turpis urna. Nam pulvinar tincidunt posuere. 
+
+                        </h4>
+                    <a data-scroll-reveal="enter from the bottom after 0.6s" href="#" class="btn btn-danger set-bk-clr">Explore Awesomeness</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HEADER SECTION END  -->
+<section id="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                <h2>
+                    <strong>OUR SERVICES</strong>
+                </h2>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+
+                
+            </div>
+        </div>
+        <div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+            <div class="col-md-3">
+                <i class="ion-ios-cloud-outline"></i>
+                <h4>
+                    <strong>Service Name # 1 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-card"></i>
+                <h4>
+                    <strong>Service Name # 2 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-speedometer"></i>
+                <h4>
+                    <strong>Service Name # 3 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-ios-settings"></i>
+                <h4>
+                    <strong>Service Name # 4 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+        </div>
+        <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.6s">
+            <div class="col-md-3">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4>
+                    <strong>Service Name # 5 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-ios-pulse-strong"></i>
+                <h4>
+                    <strong>Service Name # 6 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-ios-browsers-outline"></i>
+                <h4>
+                    <strong>Service Name # 7 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+            <div class="col-md-3">
+                <i class="ion-ios-people-outline"></i>
+                <h4>
+                    <strong>Service Name # 8 </strong>
+                </h4>
+                Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SERVICES SECTION END  -->
+<div id="testimonial" data-scroll-reveal="enter from the bottom after 0.2s">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+                    <i class="ion-ios-drag clr-set f-big"></i>
+                    <br/>
+                    <p>Consectetur adipiscing elit felis dolor felis dolor vitae.
+                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TESTIMONIAL SECTION END  -->
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT THE COMPANY</h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-third">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Responsive</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-third">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Passion</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-third">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Design</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+    </div>
+</div>
+<section id="contact">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">
+                <div class="col-md-6 col-md-offset-3 pad-bottom">
+                    <h2>
+                        <strong>STAY CONNECTED </strong>
+                    </h2>
+                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+
+                    
+                </div>
+            </div>
+            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h3>
+                        <strong>Address : </strong>
+                    </h3>
+                    <br/>
+                    <h4>102, Melborne City International,</h4>
+                    <h4>United States </h4>
+                    <h4>
+                        <strong>Email : </strong>
+                        info@yourdomain.com
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT SECTION END -->
+<footer>
+    &copy 2015 YourDomain.com  | <a href="http://www.designbootstrap.com/" target="_blank">by DesignBootstrap</a>
+</footer>
+<!--FOOTER SECTION END  -->
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY  SCRIPTS -->
+<script src="ui/assets/js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="ui/assets/js/bootstrap.js"></script>
+<!-- SCROLLING SCRIPTS PLUGIN  -->
+<script src="ui/assets/js/bootstrap.js"></script>
+<!--  FANCYBOX PLUGIN -->
+<script src="ui/assets/js/source/jquery.fancybox.js"></script>
+<!-- ISOTOPE SCRIPTS -->
+<script src="ui/assets/js/jquery.isotope.js"></script>
+<!-- SCROLL ANIMATIONS  -->
+<script src="ui/assets/js/scrollReveal.js"></script>
+<!-- CUSTOM SCRIPTS   -->
+<script src="ui/assets/js/custom.js"></script>
+
+</body></html>
+
