@@ -13,7 +13,7 @@
 		"/assets/js/bootstrap.js",
 		"/assets/js/source/jquery.fancybox.js",
 		"/assets/js/jquery.isotope.js",
-		"/assets/js/scrollReveal.js",
+		"/assets/js/scrollReveal.js"
 	 ],
 	"httpCodes" : {"OK": 200, "BAD_REQUEST": 400, "FORBIDDEN": 403, "SERVER_ERROR": 500 },
 	"domain" : "",

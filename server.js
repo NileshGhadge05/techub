@@ -7,7 +7,7 @@ var router = require('./router.js'); //send traffic to this router
 var app = express();
 app.use(morgan('combined'));
 
-app.use(express.static(path.join(__dirname, 'ui')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 
